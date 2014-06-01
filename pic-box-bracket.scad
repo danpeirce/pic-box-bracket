@@ -28,6 +28,9 @@ box_hole_disy = 0.276* inch - lid_thickness;
 ttl_usb_x = 35.7;
 ttl_usb_y = 16.03;
 
+pic_x = 76.0;
+pic_y = 30;
+
 //
 
 module plate()
@@ -50,13 +53,47 @@ module boss(x_dis, y_dis, rad)
 module ttl_usb_platform()
 {   difference()
     {
-        translate([0.1, (box_width-2*lid_thickness)/2-(ttl_usb_y+2.54*2)/2, -0.1])
+        translate([0.1, (box_width-2*lid_thickness)/2-(ttl_usb_y+2.54*2)/2, +0.1])
             cube([ttl_usb_x+2.54, ttl_usb_y+2.54*2, 1.6+4.42+0.1]);
         translate([-0.1, (box_width-2*lid_thickness)/2-(ttl_usb_y+0.3*2)/2, 4.42])
             cube([ttl_usb_x+0.3, ttl_usb_y+0.3*2, 4.42+0.1]);
         translate([-0.1, (box_width-2*lid_thickness)/2-(ttl_usb_y-0.5*2)/2, -0.2])
             cube([ttl_usb_x-0.5, ttl_usb_y-0.5*2, 8+0.1]);
     }
+}
+
+module pic_platform_hole()
+{
+     translate([ttl_usb_x+2+lid_thickness, 2*lid_thickness+6,-0.1 ])
+         cube([pic_x, pic_y, 2*lid_thickness]);
+}
+
+module tab(x_dis, y_dis)
+{
+    translate( [x_dis, y_dis, 0.1] )
+      cylinder(h=lid_thickness-.2, r =4 , center=false, $fn=16);
+}
+
+module pic_platform()
+{
+     translate([ttl_usb_x+2-2+lid_thickness, 2*lid_thickness+6-2-0.5,lid_thickness-0.1])
+          cube([pic_x+2*2-1.2, 2, 1.6+0.1]);
+     translate([ttl_usb_x+2-2+lid_thickness, 2*lid_thickness+6-2+0.5+2+pic_y,lid_thickness-0.1])
+          cube([pic_x+2*2-1, 2, 1.6+0.1]);
+     translate([ttl_usb_x+2-2+lid_thickness-0.6, 2*lid_thickness+6-2-0.5,lid_thickness-0.1])
+          cube([2, pic_y+2*2+1,  1.6+0.15]);
+     translate([ttl_usb_x+2-2+lid_thickness+0.6+pic_x+2, 2*lid_thickness+6-0.5,lid_thickness-0.1])
+          cube([2, pic_y+2*2+1,  1.6+0.15]);
+      tab(ttl_usb_x+2+lid_thickness, 2*lid_thickness+6);
+      tab(ttl_usb_x+2+lid_thickness + pic_x-3.5, 2*lid_thickness+6);
+      tab(ttl_usb_x+2+lid_thickness, 2*lid_thickness+6 + pic_y);
+      tab(ttl_usb_x+2+lid_thickness + pic_x, 2*lid_thickness+6 + pic_y);
+}
+
+module trim(x_dis, y_dis, x_size, y_size)
+{
+    translate([x_dis, y_dis, -0.1])
+        cube([x_size, y_size,lid_thickness+0.2]);
 }
 
 difference()
@@ -80,10 +117,15 @@ difference()
     hole(box_hole_disx+box_hole_length, box_hole_disy+box_hole_width, hole_boss_rad+0.5);
     translate([-0.1, (box_width-2*lid_thickness)/2-(ttl_usb_y-0.5*2)/2, -0.2])
             cube([ttl_usb_x-0.5, ttl_usb_y-0.5*2, 8+0.1]);
-    
-    
+    pic_platform_hole();
+    trim(-0.1, -0.1, box_length, 5);
+    trim(-0.1, box_width-10, box_length, 5);
+    trim(-0.1, -0.1, 5, box_width/2-ttl_usb_y/2-8);
+    trim(-0.1, box_width-box_width/2+ttl_usb_y/2+3, 5, box_width/2-ttl_usb_y/2-8);
+    trim(-0.1+box_length-12, -0.1, 6, box_width);
+    trim(17, box_width-25, 92, 20);
 }
 ttl_usb_platform();
-
+pic_platform();
 
 
