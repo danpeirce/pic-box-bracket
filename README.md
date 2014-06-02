@@ -30,4 +30,6 @@ This image omly shows a reppresention of the model in OpenSCAD. When the 3D prot
 
 There are a few other parts like generic LED's and a capacitor.
 
+## Related Repository
 
+The repository [https://github.com/danpeirce/photogate-box](https://github.com/danpeirce/photogate-box) contains the C program that will be run on the PIC MCU for this project. 
