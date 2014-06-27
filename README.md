@@ -17,6 +17,15 @@ First image omly shows a reppresention of the model in OpenSCAD. The second imag
 
 ![Image of boards mounted on Mounting plate which is mounted on box lid](http://www3.telus.net/danpeirce/notes/3D/pic-box-bracket/boards-mounted-bracket.jpg)
 
+Mounting bracket with boards from underside
+
+![Mounting bracket with boards from underside](http://www3.telus.net/danpeirce/notes/3D/pic-box-bracket/boards-mounted-bracket.jpg)
+
+Extra support has been added to the USB connector. A small amount of epoxy and chopped glass fibre strands have been added on the sides of the surface mount USB mini B connector so that it is more securely attached to the PCB.
+
+![Closeup of serial-usb board](http://www3.telus.net/danpeirce/notes/3D/pic-box-bracket/boards-mounted-bracket.jpg)
+
+
 * [Link to STL file](http://www3.telus.net/danpeirce/notes/3D/pic-box-bracket/pic-box-bracket.stl)
 * The OpenSCAD file is in the repository. 
 
