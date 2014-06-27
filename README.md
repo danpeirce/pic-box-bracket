@@ -19,11 +19,11 @@ First image omly shows a reppresention of the model in OpenSCAD. The second imag
 
 Mounting bracket with boards from underside
 
-![Mounting bracket with boards from underside](http://www3.telus.net/danpeirce/notes/3D/pic-box-bracket/boards-mounted-bracket.jpg)
+![Mounting bracket with boards from underside](http://www3.telus.net/danpeirce/notes/3D/pic-box-bracket/boards-bracket.jpg)
 
 Extra support has been added to the USB connector. A small amount of epoxy and chopped glass fibre strands have been added on the sides of the surface mount USB mini B connector so that it is more securely attached to the PCB.
 
-![Closeup of serial-usb board](http://www3.telus.net/danpeirce/notes/3D/pic-box-bracket/boards-mounted-bracket.jpg)
+![Closeup of serial-usb board](http://www3.telus.net/danpeirce/notes/3D/pic-box-bracket/serial-usb.jpg)
 
 
 * [Link to STL file](http://www3.telus.net/danpeirce/notes/3D/pic-box-bracket/pic-box-bracket.stl)
