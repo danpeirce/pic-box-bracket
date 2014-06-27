@@ -11,9 +11,11 @@ boards and USB to serial boards for projects.
 * Epoxy will be added to the inside edges of the mounting platforms. Once bonded the printed circuit 
 boards will add mechanical strength to the bracket.
 
-This image omly shows a reppresention of the model in OpenSCAD. When the 3D protoyype is printed more images will be added.
+First image omly shows a reppresention of the model in OpenSCAD. The second image is a photo of the bracket mounted on a box lid with boards mounted on the bracket plate.
 
 ![Image of Printed Circuit Board Mounting Plate](http://www3.telus.net/danpeirce/notes/3D/pic-box-bracket/pic-box-bracket.png)
+
+![Image of boards mounted on Mounting plate which is mounted on box lid](http://www3.telus.net/danpeirce/notes/3D/pic-box-bracket/boards-mounted-bracket.jpg)
 
 * [Link to STL file](http://www3.telus.net/danpeirce/notes/3D/pic-box-bracket/pic-box-bracket.stl)
 * The OpenSCAD file is in the repository. 
