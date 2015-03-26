@@ -26,7 +26,7 @@ Extra support has been added to the USB connector. A small amount of epoxy and c
 ![Closeup of serial-usb board](image/serial-usb.jpg)
 
 
-* [Link to STL file](http://www3.telus.net/danpeirce/notes/3D/pic-box-bracket/pic-box-bracket.stl)
+* [Link to STL file](http://members.shaw.ca/danielpeirce/notes/3D/pic-box-bracket/pic-box-bracket.stl)
 * The OpenSCAD file is in the repository. 
 
 ## Other Parts For the Project

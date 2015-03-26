@@ -1,3 +1,7 @@
+// file: pic-box-bracket.scad
+// by Dan Peirce B.Sc. CC0 2014
+
+
 inch = 25.4;
 
 // distance between centers of mounting  holes
